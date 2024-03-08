@@ -1,0 +1,9 @@
+Note:
+
+Admin account:
+manager1:nghiemngoc1
+password:1
+manager1:nghiemngoc2
+password:2
+
+
