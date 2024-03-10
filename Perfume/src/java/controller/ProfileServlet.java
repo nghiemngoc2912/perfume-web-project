@@ -99,7 +99,7 @@ public class ProfileServlet extends HttpServlet {
                 return;
             }
             cd.updateProfile(id, username, name, phone, email);
-            Customer acc = cd.getByUserNamePassword(c.getUsername(), c.getPassword());
+            Customer acc = cd.getByCusId(c.getId());
             session.setAttribute("account", acc);
             request.setAttribute("mess", "Updated Successfully");
             request.getRequestDispatcher("profile.jsp").forward(request, response);
